@@ -1,5 +1,5 @@
-Package: cass-pack
-Title: Cass Pack
+Package: casspack
+Title: Cass Package
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Cass",
@@ -8,7 +8,7 @@ Authors@R:
            email = "cass.z.ws@gmail.com",
            comment = c(ORCID = "0000-0003-2209-037X"))
 Description: Something! Will! Happen
-License: use_gpl3_license()
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
