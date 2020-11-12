@@ -1,0 +1,15 @@
+Package: cass-pack
+Title: Cass Pack
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Cass",
+           family = "Wilkinson Saldana",
+           role = c("aut", "cre"),
+           email = "cass.z.ws@gmail.com",
+           comment = c(ORCID = "0000-0003-2209-037X"))
+Description: Something! Will! Happen
+License: use_gpl3_license()
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
