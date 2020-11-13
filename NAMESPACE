@@ -3,3 +3,4 @@
 export("%>%")
 export(compute_corr)
 importFrom(magrittr,"%>%")
+importFrom(rlang,.data)

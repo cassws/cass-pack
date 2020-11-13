@@ -1,5 +1,5 @@
 #' Computes a tidy correlation
-#'
+#' @importFrom rlang .data
 #' @param data input data set
 #' @param var1 name of variable 1 (unquoted)
 #' @param var2 name of variable 2 (unquoted)
@@ -7,12 +7,13 @@
 #' @return A tibble with the Pearson correlation and p-value
 #' @export
 #'
+#'
 #' @examples
 #' compute_corr(data = faithful, var1 = eruptions, var2 = waiting)
 compute_corr <- function(data, var1, var2){
 
   # compute correlation ----
-  cor.test(
+  stats::cor.test(
     x = data %>% dplyr::pull({{var1}}),
     y = data %>% dplyr::pull({{var2}})
   ) %>%
@@ -20,8 +21,8 @@ compute_corr <- function(data, var1, var2){
   broom::tidy() %>%
     # retain and rename relevant bits ----
   dplyr::select(
-    correlation = estimate,
-    pval = p.value
+    correlation = .data$estimate,
+    pval = .data$p.value
   )
 
 }

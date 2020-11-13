@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "cass.z.ws@gmail.com",
            comment = c(ORCID = "0000-0003-2209-037X"))
-Description: Something! Will! Happen
+Description: Something will happen! Perhaps!
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
@@ -18,4 +18,5 @@ BugReports: https://github.com/zoews/cass-pack/issues
 Imports: 
     broom,
     dplyr,
-    magrittr
+    magrittr,
+    rlang
